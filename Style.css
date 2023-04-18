@@ -1,0 +1,112 @@
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: var(--bgcolor1);
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: var(--bgcolor2);
+    width: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: var(--light-Blue);
+    }
+    
+
+:root{
+    --txtcolor: #F4EEE0;
+    --txtcolor1: #b8b9ce;
+    --bgcolor:#16151b;
+    --bgcolor1v1:#23212c;
+    --bgcolor1:#3e3546;
+    --bgcolor2:#6D5D6E;
+}
+
+
+body{
+    margin: 0;
+    color: #F4EEE0;
+    background-color: var(--bgcolor);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgcolor1);
+    color: var(--txtcolor1);
+}
+header h1{
+    margin-left: 20px;
+}
+header nav{
+    position: relative;
+    margin-right: 20px;
+    top: 25px;
+}
+nav ul{
+    margin: 0;
+    display: flex;    
+}
+header nav ul li{
+    list-style-type: none;    
+    justify-content:space-evenly;
+    font-size: 23px;
+    padding-right: 20px;
+}
+#bestWorks{
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#changeframe{
+    display: flex;
+    justify-content: right;  
+}
+#bestWorksheader{
+    display: flex;
+    justify-content: space-between;
+}
+#nameofsite{
+    position: relative;
+    top: 25px;
+    color: var(--txtcolor);
+    font-size: 20px;
+}
+
+#nameofsiteHonor{
+    position: relative;
+    top: 25px;
+    color: var(--txtcolor);
+    font-size: 20px;
+}
+
+.bodyContent{
+    margin: 20px;
+}
+
+.allOfMyWorks{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot{
+    background-color: var(--bgcolor1v1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.allOfMyWorks div ul li{
+    list-style-type: none;  
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.rmdecor{
+    text-decoration: none;
+    color: var(--txtcolor1);
+}

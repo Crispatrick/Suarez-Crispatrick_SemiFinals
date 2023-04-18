@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<style>
+#Register{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 500px;
+    background-color: rgba(25, 13, 27, 0.901);
+    color: white;  
+    border-radius: 30px;
+}
+body{
+        background-image: url("Tiles.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+}
+h1{
+    font-family: 'Arial Narrow Bold';
+    font-size: 50px;
+    color: white;
+}
+#info{
+    position: relative;
+    left: 30px;
+    color: white;
+
+}
+#name{
+    font-size: 18px;
+    float: left;
+}
+#textbox{
+    position: relative;
+    left: 10px;
+    width: 100px;
+    
+}
+.Col2{
+    position: relative;
+    top: 20px;
+}
+.radio{
+    position: relative;
+    top: 2px;
+    right: 5px;
+    
+}
+#dd{
+    position: relative;
+    top: 5px;
+}
+.desc{
+    float: right
+}
+#col3{
+    position: relative;
+    top: 15px;
+}
+#sub{
+    border-radius: 10px;
+    background-color: rgb(246, 228, 255);
+    border-color: rgb(181, 188, 228);
+    font-family: 'Arial Narrow Bold';
+    position: relative;
+    top: 5px;
+}
+
+</style>
+
+<body>
+    <Div id="Register">
+        <h1>Sign in</h1> <hr>
+            <div id="info">
+                <form align ="left">
+                    <br>
+                    <span id="name"> 
+                        <label for="txt1">Name: </label> <br>
+                        <label for="txt2">First Name: </label> <br>
+                        <label for="txt3">Middle Name: </label><br><br>
+                        <label for="txt4">Username: </label><br>
+                        <label for="txt5">Password: </label><br>
+                        <label for="txt6">Gender: </label><br>
+                        Country: <br> <br>
+                        Short description: <br>
+
+                    </span>
+                    <span id="textbox">
+                        <input type="text" size="38" id="txt1"> <br>
+                        <input type="text" size="38" id="txt2"> <br>
+                        <input type="text" size="38" id="txt3"> <br>
+                        <input type="text" size="38" id="txt4" class="Col2"> <br>
+                        <input type="password" size="38" id="txt5" class="Col2"> <br><br>
+                        <input type="radio" id="radio1" class="radio" name="Gender"> <label for="radio1" class="radio">Male</label>
+                        <input type="radio" id="radio2" class="radio" name="Gender"> <label for="radio2" class="radio">Female</label>
+                        <input type="radio" id="radio3" class="radio" name="Gender"> <label for="radio3" class="radio">Prefer not to say</label> <br>
+                        <select name="" id="dd"> 
+                            <option value="">Philippines</option>
+                            <option value="">USA</option>
+                            <option value="">UK</option>
+                            <option value="">China</option>
+                            <option value="">Japan</option>
+                            <option value="">Korea</option>
+                        </select> <br>
+                        <textarea name="" id="col3" cols="37" rows="3"></textarea>
+                    </span>
+
+                    <br><br><br>
+                </form>
+            </div>
+            <form action="">
+                <input type="checkbox" id="chk" required>
+                <label style="color: rgb(255, 255, 255);" for="chk">I have read the <a href="https://www.youtube.com/watch?v=OgZzUJud3Q4" style="color: white;" target="_blank">terms and services</a>  </label> <br>
+                <input type="submit" value="SUBMIT" id="sub">
+            </form>
+            <br><br>
+    </Div>
+</body>
+</html>

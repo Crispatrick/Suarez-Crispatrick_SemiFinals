@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Crisite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"  type="image/x-icon" href="img/favicon.ico">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="blur"></div>
+    <!--*Done == TODO: Header-->
+    <header id="top">
+        <span>
+            <a style="position: relative; bottom: 5px;" href="https://www.youtube.com/watch?v=LrGWB-_L4fQ" id="hlinks" target="_blank"><img src="img/favicon.ico" alt="" style="height: 25px; position: relative; top: 2px;" > 
+                CRISITE
+            </a>
+        </span> 
+        <nav >
+            <ul class="headerLinks">
+                <a href="https://www.youtube.com/watch?v=mWPhLWHWjZM" target="_blank" id="hlinks" >
+                    <li class="hactive">
+                        Home
+                    </li>
+                </a>
+                
+
+                <a href="https://www.youtube.com/watch?v=CxoXItNERPM" target="_blank" id="hlinks">
+                    <li>
+                        About
+                    </li>
+                </a>
+                   
+                <a href="https://www.youtube.com/watch?v=UIp6_0kct_U" target="_blank" id="hlinks">
+                    <li style="border: none;">
+                        Help
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--*Done == TODO semiDONE: Sidebar-->
+    <aside>
+        <nav>
+            <ul>
+                <a href="#blur" style="text-decoration: none;">
+                    <li class="sactive">Header</li>
+                </a>
+                
+                <a href="#border" style="text-decoration: none;">
+                    <li>Border <br> Outline</li>
+                </a>
+                
+                <a href="#letter"  style="text-decoration: none;">
+                <li style="border: none;">Footer</li>
+                </a>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!--*Done == TODO: 1s Border and Outline -->
+    <img src="img/cyberpunk.png" alt="" id="bgImgS1">
+    <section id="border">
+        <div class="gui">
+            <div class="box"></div>
+            <details class="instruction" open> 
+                <summary style="font-size: 25px;">Instruction</summary>
+                <p style="text-indent: 30px; font-size: 20px;">This is a functioning outline and border changer that shows how
+                different border or outline looks like. Click or tap the button so that it will change</p>   
+                <a href="https://www.youtube.com/watch?v=9hhMUT2U2L4" target="_blank"><img src="img/tenin_black_shirt_woman.png" alt="" id="woman"></a>
+                                
+            </details>
+        </div>
+        
+        
+        <div class="boxInteract">
+            <div style="text-align: center;">
+                <h1>Border</h1>
+            </div>
+            <div class="buttons">
+                <button onclick="ridge()">Ridge</button>
+                <button onclick="inset()">Inset</button>
+                <button onclick="none()">None</button>
+                <button onclick="dotted()">Dotted</button>
+                <button onclick="dashed()">Dashed</button>
+                <button onclick="solid()">Solid</button>
+                <button onclick="double()">Double</button>
+                <button onclick="groove()">Groove</button>
+            </div>
+
+
+            <div style="text-align: center;">
+                <h1>Outline</h1>
+            </div>
+            <div class="buttons">
+                <button onclick="oridge()">Ridge</button>
+                <button onclick="oinset()">Inset</button>
+                <button onclick="onone()">None</button>
+                <button onclick="odotted()">Dotted</button>
+                <button onclick="odashed()">Dashed</button>
+                <button onclick="osolid()">Solid</button>
+                <button onclick="odouble()">Double</button>
+                <button onclick="ogroove()">Groove</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--*Done == TODO: Letter-->
+    <footer class="letter" id="letter">
+        <div>
+            <h1 style="text-align: center; padding-top: 30px; font-weight: bolder; font-size: 30px; letter-spacing: 4px;" id="titlelet">LOREM</h1>
+            <p style="text-align: right; margin-right: 100px; font-size: 20px; word-spacing: 5px;">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit.</p>
+            <p style="text-align: left; margin-left: 100px; font-size: 20px; " > <span style="text-transform: capitalize;">modi</span> <span style="text-transform: lowercase;">NESCIUNT VERO</span> <bdo dir="rtl"> <span style="text-transform: uppercase; ">expedita.</span> </bdo></p> 
+            <p style="text-indent: 50px; margin: 0px 100px 0px 100px; font-size: 20px; padding-bottom: 20px;">
+            Sapiente <span style="text-decoration: line-through;">laudantium</span> tenetur necessitatibus <span style="line-height: 1.9;">eligendi incidunt</span> blanditiis, <span style="text-decoration: underline;">delectus</span>  commodi  animi odio harum asperiores numquam quo quaerat est.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure minima, eum nulla pariatur <span style="text-decoration: overline;">ducimus</span> deserunt delectus nesciunt mollitia 
+            blanditiis eveniet minus sint beatae consequatur eligendi molestias dignissimos suscipit quae non aut.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit sunt numquam illum, neque autem quae consequatur ratione provident, corporis nobis eos qui quos iusto, in facere unde nihil alias.
+            Nihil id veritatis omnis soluta, repudiandae cum eaque quo excepturi ut fugit optio nemo. Cumque, quia at exercitationem accusamus quis blanditiis est. Sunt in eos asperiores a consectetur. Maxime, doloremque?
+            </p>
+            
+        </div>
+    </footer>
+</body>
+</html>

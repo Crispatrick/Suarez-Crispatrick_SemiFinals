@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+</head>
+
+<style>
+    body{
+        background-image: url("blurred.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    #h1{
+        color: rgb(255, 245, 245);
+        border-color: rgba(255, 0, 0, 0);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    #h2{
+        font-size: 50px;
+        background-color: rgb(237, 203, 149);
+        font-family:  'Arial Narrow Bold', sans-serif;
+        color: rgb(52, 52, 52);
+    }
+    #h2v2{
+        font-size: 50px;
+        background-color: rgb(255, 236, 184);
+        font-family:  'Arial Narrow Bold', sans-serif;
+        color: rgb(54, 49, 39);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+    #h3{
+        font-size: 20px;
+        background-color: rgb(215, 185, 137);
+        font-family: 'Arial Narrow Bold', sans-serif
+        
+    }
+    #h4{
+        font-size: 20px;
+        font-family: 'Arial Narrow Bold', sans-serif
+    }
+    .pricing{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(77, 52, 52, 0.904);
+            color: rgb(0, 0, 0);
+            border-radius: 30px 5px 3px 2px;
+    }
+    #table{
+        background-size: 100% 100%;
+        background-color: rgb(196, 165, 115);
+    }
+</style>
+
+<body>
+    <div>
+        <div class="pricing">
+            <div align="center" id="h1" >
+               
+            </div>
+
+            <table cellspacing = "15" cellpadding="20" border="1" width="200" height ="100px" bordercolor="black">
+
+                <tr >
+                    <th rowspan="10" id="h2v2">CALENDAR</th>
+                </tr>
+
+                <tr id="h2">
+                    <th  colspan="7">January 2023</th>
+                </tr>
+
+
+
+                <tr id="h3" bgcolor = "white">
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                
+                <tr id="table" id="h4">
+                    <td colspan="4" background = "fireworksv2.jpg"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr id="table" id="h4">
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr id="table" id="h4">
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                </tr>
+                <tr id="table" id="h4">
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                </tr>
+                <tr id="table" id="h4">
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                
+            </table>
+            
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="SemiFinal_CSS_ITC122_Act_7_Suarez_Crispatrick_C.css">
+</head>
+
+<style>
+    /*Global changes*/
+
+    body{
+        margin: 0;
+        background: url("Textured\ Gradient.jpg") repeat-y fixed top right ;
+        background-size: cover;
+    }
+    label{
+     font-size: 20px;   
+    }
+
+    /*Specific changes in global*/
+    a.brand{
+        color: black;
+    }
+    a.helpLink, .end, #header2{
+        color: white;
+    }
+    .products > div > img{
+        padding-top: 20px;
+        
+        width: 150px;
+        height: 150px;
+
+    }
+    /*Designs*/
+    .Header{
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+
+    display: grid;
+    grid-template-columns: 3fr 440px ;
+    color: black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    padding-top: 10px;
+    justify-content: space-between;
+
+    border: 2px solid black;
+    
+    }
+
+    .items{
+
+        background-color: rgba(101, 42, 42, 0.512);
+        margin: 3%;
+
+        position: relative;
+
+        bottom: 45px;
+
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: auto;
+
+        grid-gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .products > div{
+        background-color: white;
+        text-align: center;
+
+    }
+    .productName{
+        display: grid;
+
+        grid-template-areas: 
+        'pname pname price'
+        'stars stars price' ;
+
+        text-align: left;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;       
+    }
+    #productName{
+        grid-area: pname;
+    }
+    #price{
+        grid-area: price;
+        color: green;
+
+        font-size: 25px;
+        text-align: center;
+    }
+    #rating{
+        grid-area: stars;
+
+        font-size: 10px;
+    }
+    .end{
+        display: grid;
+        animation-name: opacity;
+        animation-duration: 2s;
+
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        justify-items: center;
+        text-align: center;
+        background-color: rgb(16, 6, 11);
+        
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    #header2{
+        display: flex;
+
+        flex-direction: row;
+        border-radius: 20px 20px 0px 0px;
+        padding-left: 10px;
+        padding-bottom: 1px;
+        background-color: rgb(161, 34, 34);
+
+        margin: 3%;
+
+        justify-content: space-between;
+        align-self: center;
+    }
+    .opacity{
+        animation-name: opacity;
+        animation-duration: 2s;
+    }
+
+
+
+</style>
+
+<body>
+
+    <div class="Header">
+        <div class="Brand ">
+            <span style="padding-left: 15px;"><a href="">💬</a></span> 
+            <a href="SemiFinal_CSS_ITC122_Act_1_To_3_And_Act_6_To_16_And_Act_18_To_19_Suarez_Crispatrick_C.html" class="brand" style="padding-left: 10px;">Suarez Merch</a>
+        </div>
+
+        <div>
+            <div style="justify-items: end;" >
+                <form action="">
+                    <input type="text" name="" id="" 
+                    size="40%" value="Search"
+                    style="height: 20px; position: relative;
+                    bottom: 5px; left: 10px;">
+                    <a id="link" href="" style="padding-left: 10px;">🔍</a>
+                    <a id="link" href="">🛒</a>
+                </form> 
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="opacity">
+        <div id="header2">
+            <h1 style="padding-left: 10px;">PRODUCTS</h1>
+            <div style="padding-top: 30px; padding-right: 20px;">
+                <form action="">
+                    <Label>Category</Label>
+                    <select name="" id="">
+                        <option value="">Apparel</option>
+                        <option value="">Technology</option>
+                        <option value="">Cosmetics</option>
+                        <option value="">Furniture</option>
+                        <option value="">Accessories</option>
+                    </select>
+    
+                    &nbsp;&nbsp;
+                    <label for="">
+                        Pricing: From <input type="text" name="" id="" size="2px"> - To <input type="text" name="" id="" size="2px">
+                    </label>
+    
+                    &nbsp;&nbsp;
+                    <label for="">
+                        Sort By    
+                        <select name="" id="">
+                            <option value="">Most Reviews</option>
+                            <option value="">Top Rated</option>
+                            <option value="">Trending</option>
+                            <option value="">Hot</option>
+                        </select>
+                    </label>
+                    
+                    &nbsp;&nbsp;
+                    <label for="">
+                        Time
+                        <select name="" id="">
+                            <option value="">All Time</option>
+                            <option value="">Past Year</option>
+                            <option value="">This Year</option>
+                            <option value="">This Month</option>
+                            <option value="">This Week</option>
+                            <option value="">Recent</option>
+                        </select>
+                    </label>
+                    
+                    &nbsp;&nbsp;
+                    <label for="">
+                        Order
+                        <select name="" id="">
+                            <option value="">Ascending Order</option>
+                            <option value="">Descending Order</option>
+                        </select>
+                    </label>
+                </form>
+            </div> 
+        </div>
+    
+        <div class="items">
+    
+            <div class="products">
+    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div> 
+                        <img src="Lamp.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Desk Lamp</b> 
+                                <label id="price"><b>$15</b></label> 
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="Jacket.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Brown Jacket</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="earpods.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">White Earpods</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="necklace.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Gold Necklace</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="Heels.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">High Heels</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Assorted.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Assorted shirt</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="bshirt.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">California shirt</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <img src="Hat.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">Black Cap</b>
+                            <label id="price"><b>$30</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div>
+                    </div>
+    
+                    
+                    <div>
+                        <img src="Acoustic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Acoustic Guitar</b> 
+                                <label id="price"><b>$15</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+                    <div>
+                        <img src="couch.jpg"  alt=""><br>
+                        <div class="productName">
+                            <b id="productName">White Couch</b>
+                            <label id="price"><b>$23</b></label>
+                            <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+                    
+                    <div>
+                        <img src="Mic.jpg" alt=""> <br>
+                        <div class="productName">
+                                <b id="productName">Microphone</b> 
+                                <label id="price"><b>$8</b></label>
+                                <label id="rating">⭐⭐⭐⭐⭐</label>
+                        </div> 
+                    </div>
+    
+    
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="end">
+        <div>
+            <h1>About</h1>
+            <hr>
+            Suarez Merch is an individual who are 
+            committed to providing the best services 
+            to our customers. <br> ®Trademarked 2023, Suarez Merch.
+        </div>
+        <div>
+            <h1>Legalities</h1> <hr> 
+            <a href="" class="helpLink">Privacy Policies</a><br>
+            <a href="" class="helpLink" >Terms of use</a><br>
+            <a href="" class="helpLink" >Legal issues</a>
+        </div>
+        <div>
+            <h1>Help Center</h1> <hr>
+            <div id="helpCenterLink">
+                <nav>
+                    <a href="" class="helpLink">Customers Service</a> <br>
+                    <a href="" class="helpLink">Bug Report</a> <br>
+                </nav>
+                <nav>
+                    <a href=""class="helpLink">Feedback</a> <br>
+                    <a href=""class="helpLink">FAQ</a> <br>
+                </nav>    
+            </div>
+                
+            
+        </div>
+            
+        <div>
+            <h1>Socials</h1> <hr> <br>
+            <nav style="position: relative; bottom: 10px;">
+                <img src="Facebook_Logo_(2019).png" alt="" id="img">&ensp;
+                <img src="Youtube_logo.png" alt="" id="img">&ensp;
+                <img src="Pinterest-logo.png" alt="" id="img">
+            </nav>
+            
+        </div>
+
+    
+    </div>
+
+    <div class="disclaimer">
+        <h1>
+            Disclaimer!
+        </h1>
+        <hr>
+        <p>
+            This is a work of 1st year college student, Crispatrick Suarez. If it is blatantly not obvious, <br>
+            this is not a legitimate online shopping website but rather just simple a work  <br>
+            of college student learning Web Development; Anything that has been shown here is not factual.
+        </p>
+        Made with love and passion, Suarez.
+    </div>
+
+
+</body>
+</html>
